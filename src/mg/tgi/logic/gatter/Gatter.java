@@ -4,22 +4,23 @@ package mg.tgi.logic.gatter;
  * @author Marvin Grams
  * @version 0.1
  */
-public abstract class Gatter implements IGatter {
-    private int anzahlInputs;
-    private int anzahlOutputs;
+public abstract class Gatter {
+    private boolean[] inputs;
+    private boolean[] outputs;
 
-    @Override
     public int getAnzahlInputs() {
-        return anzahlInputs;
+        return inputs.length;
     }
 
-    @Override
     public int getAnzahlOutputs() {
-        return anzahlOutputs;
+        return outputs.length;
     }
 
-    @Override
-    public boolean getOutputState(int outputNumber) {
-        return false;
+    public Gatter(int anzahlInputs, int anzahlOutputs) {
+        this.inputs = new boolean[anzahlInputs];
+        this.outputs = new boolean[anzahlOutputs];
     }
+
+    public abstract boolean getOutputState(int outputNumber);
+    public abstract void setInputState(int inputNumber);
 }
