@@ -14,7 +14,6 @@
 .idea/**/dataSources.local.xml
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
 
 # Gradle:
 .idea/**/gradle.xml
@@ -46,3 +45,4 @@ fabric.properties
 Würde .idea/ löschen
 Würde LogicSim.iml löschen
 Würde src/ löschen
+
