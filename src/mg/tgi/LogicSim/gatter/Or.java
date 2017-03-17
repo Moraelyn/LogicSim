@@ -1,4 +1,4 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
 
 /**
  * @author Marvin Grams
@@ -15,7 +15,7 @@ public class Or extends Gatter {
     }
 
     @Override
-    public void setInputState(int inputNumber) {
+    public void setInputState(int inputNumber, boolean state) {
 
     }
 }

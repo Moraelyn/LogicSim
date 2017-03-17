@@ -1,4 +1,4 @@
-package mg.tgi.logic;
+package mg.tgi.LogicSim;
 
 /**
  * @author Marvin Grams

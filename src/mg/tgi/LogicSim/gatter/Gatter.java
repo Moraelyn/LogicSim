@@ -1,4 +1,6 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
+
+import java.util.Arrays;
 
 /**
  * @author Marvin Grams
@@ -16,11 +18,23 @@ public abstract class Gatter {
         return outputs.length;
     }
 
+    public boolean[] getInputs() {
+        return inputs;
+    }
+
     public Gatter(int anzahlInputs, int anzahlOutputs) {
         this.inputs = new boolean[anzahlInputs];
         this.outputs = new boolean[anzahlOutputs];
     }
 
     public abstract boolean getOutputState(int outputNumber);
-    public abstract void setInputState(int inputNumber);
+    public abstract void setInputState(int inputNumber, boolean state);
+
+    @Override
+    public String toString() {
+        return "Gatter{" +
+                "inputs=" + Arrays.toString(inputs) +
+                ", outputs=" + Arrays.toString(outputs) +
+                '}';
+    }
 }
