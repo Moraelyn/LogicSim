@@ -1,6 +1,6 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
 
-import mg.tgi.logic.InvalidPortCountException;
+import mg.tgi.LogicSim.InvalidPortCountException;
 
 /**
  * @author Marvin Grams
@@ -21,7 +21,7 @@ public abstract class Gatter implements IGatter {
 
     @Override
     public void changeState(int number) {
-
+        // TODO: Überlegen!
     }
 
     public int getAnzahlInputs() {
@@ -34,5 +34,5 @@ public abstract class Gatter implements IGatter {
 
     public abstract boolean getOutputState(int outputNumber);
 
-    public abstract void setInputState(int inputNumber);
+    public abstract void setInputState(int inputNumber, boolean state);
 }

@@ -1,4 +1,4 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
 
 /**
  * @author Marvin Grams

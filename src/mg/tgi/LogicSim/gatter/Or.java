@@ -1,6 +1,6 @@
 package mg.tgi.LogicSim.gatter;
 
-import mg.tgi.logic.InvalidPortCountException;
+import mg.tgi.LogicSim.InvalidPortCountException;
 
 /**
  * @author Marvin Grams
