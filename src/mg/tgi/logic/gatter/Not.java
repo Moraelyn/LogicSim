@@ -1,17 +1,19 @@
 package mg.tgi.logic.gatter;
 
+import mg.tgi.logic.InvalidPortCountException;
+
 /**
  * @author Marvin Grams
  * @version 0.1
  */
 public class Not extends Gatter {
-    public Not(int anzahlInputs, int anzahlOutputs) {
-        super(anzahlInputs, anzahlOutputs);
+    public Not(int anzahlPorts) throws InvalidPortCountException {
+        super(anzahlPorts, anzahlPorts);
     }
 
     @Override
     public boolean getOutputState(int outputNumber) {
-        return false;
+        return inputs[outputNumber];
     }
 
     @Override

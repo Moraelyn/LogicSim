@@ -6,6 +6,6 @@ package mg.tgi.logic;
  */
 public class Main {
     public static void main(String[] args) {
-
+        LogicSim ls = new LogicSim();
     }
 }
