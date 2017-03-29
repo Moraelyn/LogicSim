@@ -1,4 +1,4 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
 
 import mg.tgi.logic.InvalidPortCountException;
 
@@ -17,7 +17,7 @@ public class Not extends Gatter {
     }
 
     @Override
-    public void setInputState(int inputNumber) {
+    public void setInputState(int inputNumber, boolean state) {
 
     }
 }

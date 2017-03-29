@@ -1,4 +1,4 @@
-package mg.tgi.logic.gatter;
+package mg.tgi.LogicSim.gatter;
 
 import mg.tgi.logic.InvalidPortCountException;
 
@@ -6,8 +6,8 @@ import mg.tgi.logic.InvalidPortCountException;
  * @author Marvin Grams
  * @version 0.1
  */
-public class Or extends Gatter {
-    public Or(int anzahlInputs, int anzahlOutputs) throws InvalidPortCountException {
+public class And extends Gatter {
+    public And(int anzahlInputs, int anzahlOutputs) throws InvalidPortCountException {
         super(anzahlInputs, anzahlOutputs);
     }
 
@@ -17,7 +17,7 @@ public class Or extends Gatter {
     }
 
     @Override
-    public void setInputState(int inputNumber) {
-
+    public void setInputState(int inputNumber, boolean state) {
+        this.getInputs()[inputNumber] = state;
     }
 }
