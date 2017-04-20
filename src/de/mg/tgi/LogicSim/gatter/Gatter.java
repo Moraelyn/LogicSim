@@ -1,6 +1,6 @@
-package mg.tgi.LogicSim.gatter;
+package de.mg.tgi.LogicSim.gatter;
 
-import mg.tgi.LogicSim.InvalidPortCountException;
+import de.mg.tgi.LogicSim.InvalidPortCountException;
 
 /**
  * @author Marvin Grams
@@ -17,11 +17,6 @@ public abstract class Gatter implements IGatter {
         } catch (NegativeArraySizeException | ArrayIndexOutOfBoundsException e) {
             throw new InvalidPortCountException(e.getMessage());
         }
-    }
-
-    @Override
-    public void changeState(int number) {
-        // TODO: Überlegen!
     }
 
     public int getAnzahlInputs() {
