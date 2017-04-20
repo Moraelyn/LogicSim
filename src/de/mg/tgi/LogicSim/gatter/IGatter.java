@@ -5,5 +5,8 @@ package de.mg.tgi.LogicSim.gatter;
  * @version 0.1
  */
 public interface IGatter {
+    /**
+     * Aktualisiert die Ausgänge
+     */
     void refreshState();
 }

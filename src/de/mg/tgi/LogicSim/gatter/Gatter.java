@@ -12,9 +12,14 @@ public abstract class Gatter implements IGatter {
 
     public Gatter(int anzahlInputs, int anzahlOutputs) throws InvalidPortCountException {
         try {
+            if (anzahlInputs == 0 || anzahlOutputs == 0) {
+                throw new InvalidPortCountException("0");
+            }
             this.inputs = new boolean[anzahlInputs];
             this.outputs = new boolean[anzahlOutputs];
-        } catch (NegativeArraySizeException | ArrayIndexOutOfBoundsException e) {
+        } catch (NegativeArraySizeException e) {
+            throw new InvalidPortCountException("-1");
+        } catch (ArrayIndexOutOfBoundsException e) {
             throw new InvalidPortCountException(e.getMessage());
         }
     }

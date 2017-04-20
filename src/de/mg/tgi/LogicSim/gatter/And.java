@@ -20,4 +20,9 @@ public final class And extends Gatter {
     public void setInputState(int inputNumber, boolean state) {
         inputs[inputNumber] = state;
     }
+
+    @Override
+    public void refreshState() {
+
+    }
 }
